@@ -1,0 +1,42 @@
+[INFO|BrClass.py:99] 2024-11-07 15:45:13,343 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:45:13,552 > ORA-01008: not all variables bound
+[INFO|BrClass.py:99] 2024-11-07 15:45:32,360 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:45:33,211 > ORA-01008: not all variables bound
+[INFO|BrClass.py:99] 2024-11-07 15:46:31,779 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:46:31,959 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:47:16,759 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:47:16,941 > ORA-00913: too many values
+[INFO|BrClass.py:99] 2024-11-07 15:47:58,182 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:47:58,349 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:48:51,854 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:48:52,014 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:51:02,578 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:99] 2024-11-07 15:51:02,735 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:101] 2024-11-07 15:52:49,363 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:101] 2024-11-07 15:52:49,836 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:101] 2024-11-07 15:55:04,468 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:101] 2024-11-07 15:55:04,629 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:102] 2024-11-07 15:57:48,842 > too many values to unpack (expected 2)
+[INFO|BrClass.py:102] 2024-11-07 15:57:49,007 > too many values to unpack (expected 2)
+[INFO|BrClass.py:102] 2024-11-07 15:57:59,466 > too many values to unpack (expected 2)
+[INFO|BrClass.py:102] 2024-11-07 15:57:59,622 > too many values to unpack (expected 2)
+[INFO|BrClass.py:102] 2024-11-07 15:58:14,612 > too many values to unpack (expected 2)
+[INFO|BrClass.py:102] 2024-11-07 15:58:14,968 > too many values to unpack (expected 2)
+[INFO|BrClass.py:102] 2024-11-07 15:58:53,306 > too many values to unpack (expected 2)
+[INFO|BrClass.py:102] 2024-11-07 15:58:53,471 > too many values to unpack (expected 2)
+[INFO|BrClass.py:101] 2024-11-07 15:59:17,313 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:101] 2024-11-07 15:59:17,506 > ORA-01036: illegal variable name/number
+[INFO|BrClass.py:102] 2024-11-07 16:01:19,830 > ORA-12899: value too large for column "S_IND"."MART_DJY_02"."CRTNDAY" (actual: 14, maximum: 8)
+[INFO|BrClass.py:102] 2024-11-07 16:01:20,013 > ORA-00904: "지상층수": invalid identifier
+[INFO|BrClass.py:102] 2025-01-06 09:03:58,132 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:03:58,550 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:03:59,021 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:03:59,431 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:05:46,622 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:05:48,141 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:05:49,997 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:05:51,013 > ORA-01008: not all variables bound
+[INFO|BrClass.py:102] 2025-01-06 09:07:53,852 > ORA-01008: not all variables bound
+[INFO|BrClass.py:105] 2025-01-06 10:11:00,208 > ORA-12899: value too large for column "S_IND"."MART_SHTREG_01"."SHTERGBCD" (actual: 5, maximum: 2)
+[INFO|BrClass.py:105] 2025-01-06 10:12:26,973 > ORA-12899: value too large for column "S_IND"."MART_SHTREG_01"."SHTERGBCD" (actual: 5, maximum: 2)
+[INFO|BrClass.py:105] 2025-01-06 10:16:02,900 > ORA-12899: value too large for column "S_IND"."MART_SHTREG_01"."SHTERGBCD" (actual: 5, maximum: 2)

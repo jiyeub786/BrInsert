@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<root>
+    <con id ="oracle">
+        <host>kimjiyeub</host>
+        <sid>ORCL</sid>
+        <user>EDUORACLE</user>
+        <password>kor0920</password>
+    </con>
+
+    <con id ="oracle_stat2019">
+        <host>localhost:1521</host>
+        <sid>ORCL</sid>
+        <user>STAT2019</user>
+        <password>STAT2019</password>
+    </con>
+
+    <con id ="oracle_stat2020">
+        <host>localhost:1521</host>
+        <sid>ORCL</sid>
+        <user>STAT2020</user>
+        <password>STAT2020</password>
+    </con>
+
+    <con id ="oracle_stat2021">
+        <host>192.168.0.7:1521</host>
+        <sid>ORCL</sid>
+        <user>STAT2021</user>
+        <password>STAT2021</password>
+    </con>
+
+    <con id ="oracle_backup2022_1H">
+        <host>182.162.161.233:3315</host>
+        <sid>TESTDB</sid>
+        <user>EDUORACLE20220701</user>
+        <password>EDUORACLE20220701</password>
+    </con>
+
+    <con id ="oracle_DQ">
+        <host>182.162.161.233:3310</host>
+        <sid>EDUMACDB</sid>
+        <user>DQ</user>
+        <password>DQ</password>
+    </con>
+
+    <con id ="mysql">
+        <host>127.0.0.1</host>
+        <port>3306</port>
+        <database>mysql</database>
+        <user>root</user>
+        <password>kor0920</password>
+    </con>
+
+    <con id ="postgresql">
+        <host>127.0.0.1</host>
+        <port>5433</port>
+        <database>postgres</database>
+        <user>postgres</user>
+        <password>kor0920</password>
+    </con>
+
+    <con id ="postgresqlaa">
+        <host>127.0.0.1
+         <g>g
+             <f>
+                 f
+             </f>
+         </g>
+            <f>f</f>
+        </host>
+        <port>5433</port>
+        <database>postgres</database>
+        <user>postgres</user>
+        <password>kor0920</password>
+    </con>
+
+
+
+
+</root>

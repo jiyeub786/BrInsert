@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<root>
+    <filePath id ="log"></filePath>
+
+    <filePath id ="rootPath">D:\python\project\brDBInsert_new\app</filePath>
+
+    <filePath id ="INPUT">D:\python\project\brDBInsert_new\app\files/INPUTS</filePath>
+    <filePath id ="OUTPUT">D:\python\project\brDBInsert_new\app\files/OUTPUTS</filePath>
+
+
+
+
+
+
+</root>

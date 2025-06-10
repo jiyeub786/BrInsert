@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+
+<root>
+
+
+    <ddl id ="setTableBrMartDjy01">
+        CREATE TABLE S_IND.MART_DJY_01(
+            mgmBldrgstPk VARCHAR2(33)
+                ,mgmUpBldrgstPk VARCHAR2(33)
+                ,regstrGbCd VARCHAR2(1)
+                ,regstrGbCdNm VARCHAR2(500)
+                ,regstrKindCd VARCHAR2(1)
+                ,regstrKindCdNm VARCHAR2(500)
+                ,platPlc VARCHAR2(500)
+                ,newPlatPlc VARCHAR2(500)
+                ,bldNm VARCHAR2(500)
+                ,sigunguCd VARCHAR2(5)
+                ,bjdongCd VARCHAR2(5)
+                ,platGbCd CHAR(1)
+                ,bun VARCHAR2(4)
+                ,ji VARCHAR2(4)
+                ,splotNm VARCHAR2(500)
+                ,block VARCHAR2(50)
+                ,lot VARCHAR2(50)
+                ,bylotCnt NUMBER(5)
+                ,naRoadCd VARCHAR2(12)
+                ,naBjdongCd VARCHAR2(5)
+                ,naUgrndCd VARCHAR2(1)
+                ,naMainBun NUMBER(5)
+                ,naSubBun NUMBER(5)
+                ,jiyukCd VARCHAR2(6)
+                ,jiguCd VARCHAR2(6)
+                ,guyukCd VARCHAR2(6)
+                ,jiyukCdNm VARCHAR2(500)
+                ,jiguCdNm VARCHAR2(500)
+                ,guyukCdNm VARCHAR2(500)
+                ,crtnDay VARCHAR2(8)
+            ) nologging
+    </ddl>
+
+    <ddl id ="setTableBrMartDjy02">
+        CREATE TABLE S_IND.MART_DJY_02
+            (   mgmBldrgstPk VARCHAR2(33)
+                ,regstrGbCd VARCHAR2(1)
+                ,regstrGbCdNm VARCHAR2(500)
+                ,regstrKindCd VARCHAR2(1)
+                ,regstrKindCdNm VARCHAR2(500)
+                ,newOldRegstrGbCd CHAR(1)
+                ,newOldRegstrGbCdNm VARCHAR2(500)
+                ,platPlc VARCHAR2(500)
+                ,newPlatPlc VARCHAR2(500)
+                ,bldNm VARCHAR2(500)
+                ,sigunguCd VARCHAR2(10)
+                ,bjdongCd VARCHAR2(10)
+                ,platGbCd CHAR(1)
+                ,bun VARCHAR2(4)
+                ,ji VARCHAR2(4)
+                ,splotNm VARCHAR2(500)
+                ,block VARCHAR2(50)
+                ,lot VARCHAR2(50)
+                ,bylotCnt NUMBER(5)
+                ,naRoadCd VARCHAR2(20)
+                ,naBjdongCd VARCHAR2(10)
+                ,naUgrndCd VARCHAR2(10)
+                ,naMainBun NUMBER(5)
+                ,naSubBun NUMBER(5)
+                ,platArea NUMBER(19,9)
+                ,archArea NUMBER(19,9)
+                ,bcRat NUMBER(19,9)
+                ,totArea NUMBER(19,9)
+                ,vlRatEstmTotArea NUMBER(19,9)
+                ,vlRat NUMBER(19,9)
+                ,mainPurpsCd VARCHAR2(10)
+                ,mainPurpsCdNm VARCHAR2(500)
+                ,etcPurps VARCHAR2(1000)
+                ,hhldCnt NUMBER(5)
+                ,fmlyCnt NUMBER(5)
+                ,mainBldCnt NUMBER(5)
+                ,atchBldCnt NUMBER(5)
+                ,atchBldArea NUMBER(19,9)
+                ,totPkngCnt NUMBER(7)
+                ,indrMechUtcnt NUMBER(6)
+                ,indrMechArea NUMBER(19,9)
+                ,oudrMechUtcnt NUMBER(6)
+                ,oudrMechArea NUMBER(19,9)
+                ,indrAutoUtcnt NUMBER(6)
+                ,indrAutoArea NUMBER(19,9)
+                ,oudrAutoUtcnt NUMBER(6)
+                ,oudrAutoArea NUMBER(19,9)
+                ,pmsDay VARCHAR2(10)
+                ,stcnsDay VARCHAR2(10)
+                ,useAprDay VARCHAR2(10)
+                ,pmsnoYear VARCHAR2(10)
+                ,pmsnoKikCd VARCHAR2(7)
+                ,pmsnoKikCdNm VARCHAR2(500)
+                ,pmsnoGbCd VARCHAR2(4)
+                ,pmsnoGbCdNm VARCHAR2(500)
+                ,hoCnt NUMBER(5)
+                ,engrGrade VARCHAR2(4)
+                ,engrRat NUMBER(19,9)
+                ,engrEpi NUMBER(5)
+                ,gnBldGrade CHAR(1)
+                ,gnBldCert NUMBER(5)
+                ,itgBldGrade CHAR(1)
+                ,itgBldCert NUMBER(5)
+                ,crtnDay VARCHAR2(8)
+            ) nologging
+    </ddl>
+
+    <ddl id ="setTableBrMartDjy03">
+        CREATE TABLE S_IND.MART_DJY_03
+            (   mgmBldrgstPk VARCHAR2(33)
+                ,regstrGbCd VARCHAR2(1)
+                ,regstrGbCdNm VARCHAR2(500)
+                ,regstrKindCd VARCHAR2(1)
+                ,regstrKindCdNm VARCHAR2(500)
+                ,platPlc VARCHAR2(500)
+                ,newPlatPlc VARCHAR2(500)
+                ,bldNm VARCHAR2(500)
+                ,sigunguCd VARCHAR2(10)
+                ,bjdongCd VARCHAR2(10)
+                ,platGbCd VARCHAR2(1)
+                ,bun VARCHAR2(10)
+                ,ji VARCHAR2(10)
+                ,splotNm VARCHAR2(500)
+                ,block VARCHAR2(50)
+                ,lot VARCHAR2(50)
+                ,bylotCnt NUMBER(5)
+                ,naRoadCd VARCHAR2(20)
+                ,naBjdongCd VARCHAR2(10)
+                ,naUgrndCd VARCHAR2(1)
+                ,naMainBun NUMBER(5)
+                ,naSubBun NUMBER(5)
+                ,dongNm VARCHAR2(500)
+                ,mainAtchGbCd VARCHAR2(1)
+                ,mainAtchGbCdNm VARCHAR2(500)
+                ,platArea NUMBER(19,9)
+                ,archArea NUMBER(19,9)
+                ,bcRat NUMBER(19,9)
+                ,totArea NUMBER(19,9)
+                ,vlRatEstmTotArea NUMBER(19,9)
+                ,vlRat NUMBER(19,9)
+                ,strctCd varchar2(10)
+                ,strctCdNm VARCHAR2(500)
+                ,etcStrct VARCHAR2(1000)
+                ,mainPurpsCd VARCHAR2(10)
+                ,mainPurpsCdNm VARCHAR2(500)
+                ,etcPurps VARCHAR2(1000)
+                ,roofCd VARCHAR2(2)
+                ,roofCdNm VARCHAR2(500)
+                ,etcRoof VARCHAR2(1000)
+                ,hhldCnt NUMBER(5)
+                ,fmlyCnt NUMBER(5)
+                ,heit NUMBER(19,9)
+                ,grndFlrCnt NUMBER(5)
+                ,ugrndFlrCnt NUMBER(5)
+                ,rideUseElvtCnt NUMBER(5)
+                ,emgenUseElvtCnt NUMBER(5)
+                ,atchBldCnt NUMBER(5)
+                ,atchBldArea NUMBER(19,9)
+                ,totDongTotArea NUMBER(19,9)
+                ,indrMechUtcnt NUMBER(6)
+                ,indrMechArea NUMBER(19,9)
+                ,oudrMechUtcnt NUMBER(6)
+                ,oudrMechArea NUMBER(19,9)
+                ,indrAutoUtcnt NUMBER(6)
+                ,indrAutoArea NUMBER(19,9)
+                ,oudrAutoUtcnt NUMBER(6)
+                ,oudrAutoArea NUMBER(19,9)
+                ,pmsDay VARCHAR2(10)
+                ,stcnsDay VARCHAR2(10)
+                ,useAprDay VARCHAR2(20)
+                ,pmsnoYear VARCHAR2(10)
+                ,pmsnoKikCd VARCHAR2(7)
+                ,pmsnoKikCdNm VARCHAR2(500)
+                ,pmsnoGbCd VARCHAR2(10)
+                ,pmsnoGbCdNm VARCHAR2(500)
+                ,hoCnt NUMBER(5)
+                ,engrGrade VARCHAR2(10)
+                ,engrRat NUMBER(19,9)
+                ,engrEpi NUMBER(5)
+                ,gnBldGrade VARCHAR2(1)
+                ,gnBldCert NUMBER(5)
+                ,itgBldGrade VARCHAR2(1)
+                ,itgBldCert NUMBER(5)
+                ,crtnDay VARCHAR2(8)
+                ,rserthqkapplc VARCHAR2(4000)
+                ,rserthqkablty VARCHAR2(4000)
+            ) nologging
+    </ddl>
+
+    <ddl id ="setTableBrMartDjy04">
+        CREATE TABLE S_IND.MART_DJY_04
+            (   mgmBldrgstPk VARCHAR2(33)
+                ,platPlc VARCHAR2(200)
+                ,newPlatPlc VARCHAR2(500)
+                ,bldNm VARCHAR2(500)
+                ,sigunguCd VARCHAR2(10)
+                ,bjdongCd VARCHAR2(10)
+                ,platGbCd VARCHAR2(10)
+                ,bun VARCHAR2(10)
+                ,ji VARCHAR2(10)
+                ,splotNm VARCHAR2(500)
+                ,block VARCHAR2(50)
+                ,lot VARCHAR2(50)
+                ,naRoadCd VARCHAR2(12)
+                ,naBjdongCd VARCHAR2(10)
+                ,naUgrndCd VARCHAR2(10)
+                ,naMainBun NUMBER(5)
+                ,naSubBun NUMBER(5)
+                ,dongNm VARCHAR2(500)
+                ,flrGbCd VARCHAR2(10)
+                ,flrGbCdNm VARCHAR2(500)
+                ,flrNo NUMBER(4)
+                ,flrNoNm VARCHAR2(500)
+                ,strctCd VARCHAR2(10)
+                ,strctCdNm VARCHAR2(500)
+                ,etcStrct VARCHAR2(1000)
+                ,mainPurpsCd VARCHAR2(10)
+                ,mainPurpsCdNm VARCHAR2(500)
+                ,etcPurps VARCHAR2(1000)
+                ,area NUMBER(19,9)
+                ,mainAtchGbCd VARCHAR2(10)
+                ,mainAtchGbCdNm VARCHAR2(500)
+                ,areaExctYn VARCHAR2(1)
+                ,crtnDay VARCHAR2(8)
+            ) nologging
+    </ddl>
+
+    <ddl id ="setTableBrMartDjy05">
+        CREATE TABLE S_IND.MART_DJY_05
+             (mgmBldrgstPk VARCHAR2(33)
+                ,regstrGbCd VARCHAR2(1)
+                ,regstrGbCdNm VARCHAR2(100)
+                ,regstrKindCd VARCHAR2(1)
+                ,regstrKindCdNm VARCHAR2(100)
+                ,platPlc VARCHAR2(200)
+                ,newPlatPlc VARCHAR2(200)
+                ,bldNm VARCHAR2(500)
+                ,sigunguCd VARCHAR2(5)
+                ,bjdongCd VARCHAR2(5)
+                ,platGbCd CHAR(1)
+                ,bun VARCHAR2(4)
+                ,ji VARCHAR2(4)
+                ,splotNm VARCHAR2(200)
+                ,block VARCHAR2(500)
+                ,lot VARCHAR2(20)
+                ,naRoadCd VARCHAR2(12)
+                ,naBjdongCd VARCHAR2(5)
+                ,naUgrndCd VARCHAR2(1)
+                ,naMainBun NUMBER(5)
+                ,naSubBun NUMBER(5)
+                ,atchRegstrGbCd CHAR(1)
+                ,atchRegstrGbCdNm VARCHAR2(100)
+                ,atchSigunguCd VARCHAR2(5)
+                ,atchBjdongCd VARCHAR2(5)
+                ,atchPlatGbCd CHAR(1)
+                ,atchBun VARCHAR2(4)
+                ,atchJi VARCHAR2(4)
+                ,atchSplotNm VARCHAR2(200)
+                ,atchBlock VARCHAR2(500)
+                ,atchLot VARCHAR2(20)
+                ,atchEtcJibunNm VARCHAR2(300)
+                ,crtnDay VARCHAR2(8)
+            ) nologging
+    </ddl>
+
+    <ddl id ="setTableBrMartDjy09">
+        CREATE TABLE S_IND.MART_DJY_09
+                (      mgmBldrgstPk VARCHAR2(33)
+                 ,regstrGbCd VARCHAR2(1)
+                 ,regstrGbCdNm VARCHAR2(500)
+                 ,regstrKindCd VARCHAR2(1)
+                 ,regstrKindCdNm VARCHAR2(500)
+                 ,platPlc VARCHAR2(500)
+                 ,newPlatPlc VARCHAR2(500)
+                 ,bldNm VARCHAR2(500)
+                 ,sigunguCd VARCHAR2(10)
+                 ,bjdongCd VARCHAR2(10)
+                 ,platGbCd CHAR(1)
+                 ,bun VARCHAR2(10)
+                 ,ji VARCHAR2(10)
+                 ,splotNm VARCHAR2(500)
+                 ,block VARCHAR2(500)
+                 ,lot VARCHAR2(500)
+                 ,naRoadCd VARCHAR2(20)
+                 ,naBjdongCd VARCHAR2(20)
+                 ,naUgrndCd VARCHAR2(20)
+                 ,naMainBun NUMBER(5)
+                 ,naSubBun NUMBER(5)
+                 ,dongNm VARCHAR2(500)
+                 ,hoNm VARCHAR2(500)
+                 ,flrGbCd VARCHAR2(20)
+                 ,flrGbCdNm VARCHAR2(500)
+                 ,flrNo NUMBER(4)
+                 ,crtnDay VARCHAR2(8)
+                 ) nologging
+    </ddl>
+
+    <ddl id ="setTableBrMartShtreg01">
+        CREATE TABLE S_IND.MART_SHTREG_01
+                (MGMSHTREGPK VARCHAR2(33)
+                ,MGMBLDRGSTPK VARCHAR2(33)
+                ,SHTERGBCD VARCHAR2(2)
+                ,SHTERGBCDNM VARCHAR2(100)
+                ,REGSTRGBCD VARCHAR2(1)
+                ,REGSTRGBCDNM VARCHAR2(100)
+                ,REGSTRKINDCD VARCHAR2(1)
+                ,REGSTRKINDCDNM VARCHAR2(100)
+                ,NEWPLATPLC VARCHAR2(500)
+                ,PLATPLC VARCHAR2(400)
+                ,BLDNM VARCHAR2(200)
+                ,SIGUNGUCD VARCHAR2(5)
+                ,BJDONGCD VARCHAR2(5)
+                ,PLATGBCD CHAR(1)
+                ,BUN VARCHAR2(4)
+                ,JI VARCHAR2(4)
+                ,SPLOTNM VARCHAR2(200)
+                ,BLOCK VARCHAR2(50)
+                ,LOT VARCHAR2(50)
+                ,BYLOTCNT number(5)
+                ,NAROADCD VARCHAR2(12)
+                ,NABJDONGCD VARCHAR2(5)
+                ,NAUGRNDCD VARCHAR2(1)
+                ,NAMAINBUN NUMBER
+                ,NASUBBUN NUMBER
+                ,JIYUKCD VARCHAR2(6)
+                ,JIGUCD VARCHAR2(6)
+                ,GUYUKCD VARCHAR2(6)
+                ,JIYUKCDNM VARCHAR2(100)
+                ,JIGUCDNM VARCHAR2(100)
+                ,GUYUKCDNM VARCHAR2(100)
+                ,crtnDay VARCHAR2(8)
+                )nologging
+    </ddl>
+
+
+    <insert id ="insertBrMartDjy01">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_DJY_01 ( MGMBLDRGSTPK,MGMUPBLDRGSTPK,REGSTRGBCD,REGSTRGBCDNM,REGSTRKINDCD,REGSTRKINDCDNM,PLATPLC,NEWPLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,BYLOTCNT,NAROADCD,NABJDONGCD,NAUGRNDCD,NAMAINBUN,NASUBBUN,JIYUKCD,JIGUCD,GUYUKCD,JIYUKCDNM,JIGUCDNM,GUYUKCDNM,CRTNDAY )
+        VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27, :28, :29, :30)
+    </insert>
+
+    <insert id ="insertBrMartDjy02">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_DJY_02 ( MGMBLDRGSTPK,REGSTRGBCD,REGSTRGBCDNM,REGSTRKINDCD,REGSTRKINDCDNM,NEWOLDREGSTRGBCD,NEWOLDREGSTRGBCDNM,PLATPLC,NEWPLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,BYLOTCNT,NAROADCD,NABJDONGCD,NAUGRNDCD,NAMAINBUN,NASUBBUN,PLATAREA,ARCHAREA,BCRAT,TOTAREA,VLRATESTMTOTAREA,VLRAT,MAINPURPSCD,MAINPURPSCDNM,ETCPURPS,HHLDCNT,FMLYCNT,MAINBLDCNT,ATCHBLDCNT,ATCHBLDAREA,TOTPKNGCNT,INDRMECHUTCNT,INDRMECHAREA,OUDRMECHUTCNT,OUDRMECHAREA,INDRAUTOUTCNT,INDRAUTOAREA,OUDRAUTOUTCNT,OUDRAUTOAREA,PMSDAY,STCNSDAY,USEAPRDAY,PMSNOYEAR,PMSNOKIKCD,PMSNOKIKCDNM,PMSNOGBCD,PMSNOGBCDNM,HOCNT,ENGRGRADE,ENGRRAT,ENGREPI,GNBLDGRADE,GNBLDCERT,ITGBLDGRADE,ITGBLDCERT,CRTNDAY )
+        VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27, :28, :29, :30, :31, :32, :33, :34, :35, :36, :37, :38, :39, :40, :41, :42, :43, :44, :45, :46, :47, :48, :49, :50, :51, :52, :53, :54, :55, :56, :57, :58, :59, :60, :61, :62, :63, :64)
+    </insert>
+
+    <insert id ="insertBrMartDjy03">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_DJY_03 ( MGMBLDRGSTPK,REGSTRGBCD,REGSTRGBCDNM,REGSTRKINDCD,REGSTRKINDCDNM,PLATPLC,NEWPLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,BYLOTCNT,NAROADCD,NABJDONGCD,NAUGRNDCD,NAMAINBUN,NASUBBUN,DONGNM,MAINATCHGBCD,MAINATCHGBCDNM,PLATAREA,ARCHAREA,BCRAT,TOTAREA,VLRATESTMTOTAREA,VLRAT,STRCTCD,STRCTCDNM,ETCSTRCT,MAINPURPSCD,MAINPURPSCDNM,ETCPURPS,ROOFCD,ROOFCDNM,ETCROOF,HHLDCNT,FMLYCNT,HEIT,GRNDFLRCNT,UGRNDFLRCNT,RIDEUSEELVTCNT,EMGENUSEELVTCNT,ATCHBLDCNT,ATCHBLDAREA,TOTDONGTOTAREA,INDRMECHUTCNT,INDRMECHAREA,OUDRMECHUTCNT,OUDRMECHAREA,INDRAUTOUTCNT,INDRAUTOAREA,OUDRAUTOUTCNT,OUDRAUTOAREA,PMSDAY,STCNSDAY,USEAPRDAY,PMSNOYEAR,PMSNOKIKCD,PMSNOKIKCDNM,PMSNOGBCD,PMSNOGBCDNM,HOCNT,ENGRGRADE,ENGRRAT,ENGREPI,GNBLDGRADE,GNBLDCERT,ITGBLDGRADE,ITGBLDCERT,CRTNDAY ,rserthqkapplc,rserthqkablty)
+        VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27, :28, :29, :30, :31, :32, :33, :34, :35, :36, :37, :38, :39, :40, :41, :42, :43, :44, :45, :46, :47, :48, :49, :50, :51, :52, :53, :54, :55, :56, :57, :58, :59, :60, :61, :62, :63, :64, :65, :66, :67, :68, :69, :70, :71, :72, :73, :74, :75,:76,:77)
+    </insert>
+
+    <insert id ="insertBrMartDjy04">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_DJY_04 ( MGMBLDRGSTPK,PLATPLC,NEWPLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,NAROADCD,NABJDONGCD,NAUGRNDCD,NAMAINBUN,NASUBBUN,DONGNM,FLRGBCD,FLRGBCDNM,FLRNO,FLRNONM,STRCTCD,STRCTCDNM,ETCSTRCT,MAINPURPSCD,MAINPURPSCDNM,ETCPURPS,AREA,MAINATCHGBCD,MAINATCHGBCDNM,AREAEXCTYN,CRTNDAY )
+        VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27, :28, :29, :30, :31, :32, :33)
+    </insert>
+
+    <insert id ="insertBrMartDjy05">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_DJY_05 ( MGMBLDRGSTPK,REGSTRGBCD,REGSTRGBCDNM,REGSTRKINDCD,REGSTRKINDCDNM,PLATPLC,NEWPLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,NAROADCD,NABJDONGCD,NAUGRNDCD,NAMAINBUN,NASUBBUN,ATCHREGSTRGBCD,ATCHREGSTRGBCDNM,ATCHSIGUNGUCD,ATCHBJDONGCD,ATCHPLATGBCD,ATCHBUN,ATCHJI,ATCHSPLOTNM,ATCHBLOCK,ATCHLOT,ATCHETCJIBUNNM,CRTNDAY )
+        VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27, :28, :29, :30, :31, :32, :33)
+    </insert>
+
+    <insert id ="insertBrMartDjy09">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_DJY_09 ( MGMBLDRGSTPK,REGSTRGBCD,REGSTRGBCDNM,REGSTRKINDCD,REGSTRKINDCDNM,PLATPLC,NEWPLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,NAROADCD,NABJDONGCD,NAUGRNDCD,NAMAINBUN,NASUBBUN,DONGNM,HONM,FLRGBCD,FLRGBCDNM,FLRNO,CRTNDAY )
+        VALUES (  :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27 )
+    </insert>
+
+    <insert id ="insertBrMartShtreg01">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_SHTREG_01 ( MGMSHTREGPK,MGMBLDRGSTPK,SHTERGBCD,SHTERGBCDNM,REGSTRGBCD,REGSTRGBCDNM,REGSTRKINDCD,REGSTRKINDCDNM,NEWPLATPLC,PLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,BYLOTCNT,NAROADCD,NABJDONGCD,NAUGRNDCD,NAMAINBUN,NASUBBUN,JIYUKCD,JIGUCD,GUYUKCD,JIYUKCDNM,JIGUCDNM,GUYUKCDNM,CRTNDAY)
+        VALUES (  :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27,:28,:29,:30,:31,:32 )
+    </insert>
+
+
+
+
+    <ddl id ="setTableMART_DJY_01_MODF">
+
+        create table  S_IND.MIG_BR_BASISOULN_INFO as
+        SELECT  /*+ parallel(4) */
+               SIGUNGUCD||BJDONGCD||'-'||case when  REGSTRGBCD = '1' AND PLATGBCD = '0' THEN '1'
+                                              when  REGSTRGBCD = '1' AND PLATGBCD = '1' THEN '2'
+                                              when  REGSTRGBCD = '1' and PLATGBCD = '2' THEN '0'
+                                              when  REGSTRGBCD = '2' AND PLATGBCD = '0' THEN '3'
+                                              when  REGSTRGBCD = '2' AND PLATGBCD = '1' THEN '4'
+                                              when  REGSTRGBCD = '2' and PLATGBCD = '2' THEN '5'
+                                         ELSE '?' END ||'-'|| BUN||JI BRPK,
+               /* 일반건축물 : 토지(1) ,산(2), 지번없음(0)
+                  집합건축물 : 토지(3), 산(4), 지번없음(5) */
+               A.MGMBLDRGSTPK,
+               A.MGMUPBLDRGSTPK,
+               A.REGSTRGBCD,
+               A.REGSTRGBCDNM,
+               A.REGSTRKINDCD,
+               A.REGSTRKINDCDNM,
+               A.PLATPLC,
+               A.NEWPLATPLC,
+               A.BLDNM,
+               A.SIGUNGUCD,
+               A.BJDONGCD,
+               A.PLATGBCD,
+               A.BUN,
+               A.JI,
+               A.SPLOTNM,
+               A.BLOCK,
+               A.LOT,
+               A.BYLOTCNT,
+               A.NAROADCD,
+               A.NABJDONGCD,
+               A.NAUGRNDCD,
+               A.NAMAINBUN,
+               A.NASUBBUN,
+               A.JIYUKCD,
+               A.JIGUCD,
+               A.GUYUKCD,
+               A.JIYUKCDNM,
+               A.JIGUCDNM,
+               A.GUYUKCDNM,
+               A.CRTNDAY,
+               CAST(NULL AS VARCHAR2(10))       SHTERGBCD         ,
+               CAST(NULL AS VARCHAR2(50))     SHTERGBCDnm
+          FROM S_IND.MART_DJY_01  A
+          WHERE REGSTRKINDCD IN ('1','2','3')
+    </ddl>
+
+
+
+
+
+
+    <ddl id ="setTableMART_DJY_02_MODF">
+          create table S_IND.MIG_BR_RECAPTITLE_INFO as
+        SELECT /*+parallel(4)*/
+         A.MGMBLDRGSTPK,
+               --A.REGSTRGBCD,
+              -- A.REGSTRGBCDNM,
+              -- A.REGSTRKINDCD,
+              -- A.REGSTRKINDCDNM,
+               A.NEWOLDREGSTRGBCD,
+               A.NEWOLDREGSTRGBCDNM,
+            --   A.PLATPLC,
+             --  A.NEWPLATPLC,
+               A.BLDNM,
+            --   A.SIGUNGUCD,
+            --   A.BJDONGCD,
+            --   A.PLATGBCD,
+            --   A.BUN,
+            --   A.JI,
+            --   A.SPLOTNM,
+            --   A.BLOCK,
+            --   A.LOT,
+            --   A.BYLOTCNT,
+             --  A.NAROADCD,
+            --   A.NABJDONGCD,
+            --   A.NAUGRNDCD,
+            --   A.NAMAINBUN,
+           --    A.NASUBBUN,
+               A.PLATAREA,
+               A.ARCHAREA,
+               A.BCRAT,
+               A.TOTAREA,
+               A.VLRATESTMTOTAREA,
+               A.VLRAT,
+               A.MAINPURPSCD,
+               A.MAINPURPSCDNM,
+               A.ETCPURPS,
+               A.HHLDCNT,
+               A.FMLYCNT,
+               A.MAINBLDCNT,
+               A.ATCHBLDCNT,
+               A.ATCHBLDAREA,
+               A.TOTPKNGCNT,
+               A.INDRMECHUTCNT,
+               A.INDRMECHAREA,
+               A.OUDRMECHUTCNT,
+               A.OUDRMECHAREA,
+               A.INDRAUTOUTCNT,
+               A.INDRAUTOAREA,
+               A.OUDRAUTOUTCNT,
+               A.OUDRAUTOAREA,
+               A.PMSDAY,
+               A.STCNSDAY,
+               A.USEAPRDAY,
+               A.PMSNOYEAR,
+               A.PMSNOKIKCD,
+               A.PMSNOKIKCDNM,
+               A.PMSNOGBCD,
+               A.PMSNOGBCDNM,
+               A.HOCNT,
+               A.ENGRGRADE,
+               A.ENGRRAT,
+               A.ENGREPI,
+               A.GNBLDGRADE,
+               A.GNBLDCERT,
+               A.ITGBLDGRADE,
+               A.ITGBLDCERT,
+               A.CRTNDAY
+          FROM  S_IND.MART_DJY_02 A
+  </ddl>
+
+
+    <ddl id ="setTableMART_DJY_03_MODF">
+
+           create table S_IND.MIG_BR_TITLE_INFO as
+        SELECT /*+parallel(4)*/
+          A.MGMBLDRGSTPK,
+              -- A.REGSTRGBCD,
+              -- A.REGSTRGBCDNM,
+              -- A.REGSTRKINDCD,
+              -- A.REGSTRKINDCDNM,
+              -- A.PLATPLC,
+              -- A.NEWPLATPLC,
+               A.BLDNM,
+              -- A.SIGUNGUCD,
+              -- A.BJDONGCD,
+              -- A.PLATGBCD,
+              -- A.BUN,
+              -- A.JI,
+              -- A.SPLOTNM,
+              -- A.BLOCK,
+              -- A.LOT,
+              -- A.BYLOTCNT,
+              -- A.NAROADCD,
+              -- A.NABJDONGCD,
+              -- A.NAUGRNDCD,
+              -- A.NAMAINBUN,
+              -- A.NASUBBUN,
+               A.DONGNM,
+               A.MAINATCHGBCD,
+               A.MAINATCHGBCDNM,
+               A.PLATAREA,
+               A.ARCHAREA,
+               A.BCRAT,
+               A.TOTAREA,
+               A.VLRATESTMTOTAREA,
+               A.VLRAT,
+               A.STRCTCD,
+               A.STRCTCDNM,
+               A.ETCSTRCT,
+               A.MAINPURPSCD,
+               A.MAINPURPSCDNM,
+               A.ETCPURPS,
+               A.ROOFCD,
+               A.ROOFCDNM,
+               A.ETCROOF,
+               A.HHLDCNT,
+               A.FMLYCNT,
+               A.HEIT,
+               A.GRNDFLRCNT,
+               A.UGRNDFLRCNT,
+               A.RIDEUSEELVTCNT,
+               A.EMGENUSEELVTCNT,
+               A.ATCHBLDCNT,
+               A.ATCHBLDAREA,
+               A.TOTDONGTOTAREA,
+               A.INDRMECHUTCNT,
+               A.INDRMECHAREA,
+               A.OUDRMECHUTCNT,
+               A.OUDRMECHAREA,
+               A.INDRAUTOUTCNT,
+               A.INDRAUTOAREA,
+               A.OUDRAUTOUTCNT,
+               A.OUDRAUTOAREA,
+               A.PMSDAY,
+               A.STCNSDAY,
+               A.USEAPRDAY,
+               A.PMSNOYEAR,
+               A.PMSNOKIKCD,
+               A.PMSNOKIKCDNM,
+               A.PMSNOGBCD,
+               A.PMSNOGBCDNM,
+               A.HOCNT,
+               A.ENGRGRADE,
+               A.ENGRRAT,
+               A.ENGREPI,
+               A.GNBLDGRADE,
+               A.GNBLDCERT,
+               A.ITGBLDGRADE,
+               A.ITGBLDCERT,
+               A.CRTNDAY,
+               a.RSERTHQKAPPLC, --추가
+               A.RSERTHQKABLTY --추가
+          FROM S_IND.MART_DJY_03 A
+  </ddl>
+    <ddl id ="setTableMART_DJY_04_MODF">
+    create table S_IND.TIF_BR_FLROULN_INFO as
+    SELECT /*+parallel(4)*/
+        A.MGMBLDRGSTPK,
+        -- A.PLATPLC,
+        --  A.NEWPLATPLC,
+        A.BLDNM,
+        -- A.SIGUNGUCD,
+        --   A.BJDONGCD,
+        --   A.PLATGBCD,
+        --   A.BUN,
+        --   A.JI,
+        --   A.SPLOTNM,
+        --   A.BLOCK,
+        --   A.LOT,
+        --   A.NAROADCD,
+        --   A.NABJDONGCD,
+        --   A.NAUGRNDCD,
+        ----   A.NAMAINBUN,
+        A.NASUBBUN,
+        A.DONGNM,
+        A.FLRGBCD,
+        A.FLRGBCDNM,
+        A.FLRNO,
+        A.FLRNONM,
+        A.STRCTCD,
+        A.STRCTCDNM,
+        A.ETCSTRCT,
+        A.MAINPURPSCD,
+        A.MAINPURPSCDNM,
+        A.ETCPURPS,
+        A.AREA,
+        A.MAINATCHGBCD,
+        A.MAINATCHGBCDNM,
+        A.AREAEXCTYN,
+        A.CRTNDAY
+    FROM  S_IND.MART_DJY_04 A
+  </ddl>
+
+
+    <ddl id ="setTableMART_SHTREG_01_MODF">
+    create table S_IND.MART_SHTREG_01_MODF as
+    SELECT /*+parallel(4)*/
+        A.MGMSHTREGPK,
+        A.MGMBLDRGSTPK,
+        A.SHTERGBCD,
+        A.SHTERGBCDNM,
+        A.REGSTRGBCD,
+        A.REGSTRGBCDNM,
+        A.REGSTRKINDCD,
+        A.REGSTRKINDCDNM,
+        --  A.NEWPLATPLC,
+        --  A.PLATPLC,
+        A.BLDNM,
+        --  A.SIGUNGUCD,
+        --  A.BJDONGCD,
+        --  A.PLATGBCD,
+        --  A.BUN,
+        --  A.JI,
+        --  A.SPLOTNM,
+        --  A.BLOCK,
+        --  A.LOT,
+        --  A.BYLOTCNT,
+        --  A.NAROADCD,
+        --  A.NABJDONGCD,
+        --  A.NAUGRNDCD,
+        --  A.NAMAINBUN,
+        --  A.NASUBBUN,
+        --  A.JIYUKCD,
+        --  A.JIGUCD,
+        --  A.GUYUKCD,
+        --  A.JIYUKCDNM,
+        --  A.JIGUCDNM,
+        --  A.GUYUKCDNM,
+        A.CRTNDAY
+    FROM S_IND.MART_SHTREG_01 A
+  </ddl>
+
+
+    <ddl id ="setTableBrMartDjy11">
+        CREATE TABLE S_IND.MART_DJY_11 (
+                MGMBLDRGSTPK VARCHAR2(33)
+                ,SIGUNGUCD VARCHAR2(10)
+                ,SIGUNGUCDNM VARCHAR2(500)
+                ,BJDONGCD VARCHAR2(10)
+                ,BJDONGCDNM VARCHAR2(500)
+                ,PLATGBCD VARCHAR2(10)
+                ,PLATGBCDNM VARCHAR2(500)
+                ,BUN VARCHAR2(10)
+                ,JI VARCHAR2(10)
+                ,SPLOTNM VARCHAR2(500)
+                ,BLOCK VARCHAR2(50)
+                ,LOT VARCHAR2(50)
+                ,PLATPLC VARCHAR2(500 )
+                ,NAROADCD	VARCHAR2(12 )
+                ,NABJDONGCD	VARCHAR2(5 )
+                ,NAUGRNDCD	VARCHAR2(1 )
+                ,NAUGRNDCDNM	VARCHAR2(500 )
+                ,NAMAINBUN	NUMBER(5)
+                ,NASUBBUN	NUMBER(5)
+                ,REGSTRGBCD	VARCHAR2(1 )
+                ,REGSTRGBCDNM	VARCHAR2(500 )
+                ,REGSTRKINDCD	VARCHAR2(1 )
+                ,REGSTRKINDCDNM	VARCHAR2(500 )
+                ,BLDNM             VARCHAR2(500 BYTE)
+                ,DONGNM            VARCHAR2(500 BYTE)
+                ,honm        VARCHAR2(4000 BYTE)
+                ,AREA              NUMBER(19, 9)
+                ,SOYUGUBUNCD        VARCHAR2(4000 BYTE)
+                ,SOYUGUBUNCDNM VARCHAR2(4000 BYTE)
+                ,CRTNDAY           VARCHAR2(8 BYTE)
+        )nologging
+    </ddl>
+
+    <insert id ="insertBrMartDjy11">
+        INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_DJY_11 ( MGMBLDRGSTPK,SIGUNGUCD,SIGUNGUCDNM,BJDONGCD,BJDONGCDNM,PLATGBCD,PLATGBCDNM,BUN,JI,SPLOTNM,BLOCK,LOT,PLATPLC,NAROADCD,NABJDONGCD,NAUGRNDCD,NAUGRNDCDNM,NAMAINBUN,NASUBBUN,REGSTRGBCD,REGSTRGBCDNM,REGSTRKINDCD,REGSTRKINDCDNM,BLDNM,DONGNM,HONM,AREA,SOYUGUBUNCD,SOYUGUBUNCDNM,CRTNDAY)
+        VALUES (  :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27,:28,:29,:30 )
+    </insert>
+
+
+       <ddl id ="setTableBrMartKcy07">
+        CREATE TABLE S_IND.MART_KCY_07(
+            mgmPk VARCHAR2(33)
+                ,platPlc VARCHAR2(500)
+                ,bldNm VARCHAR2(500)
+                ,sigunguCd VARCHAR2(5)
+                ,bjdongCd VARCHAR2(5)
+                ,platGbCd CHAR(1)
+                ,bun VARCHAR2(4)
+                ,ji VARCHAR2(4)
+                ,splotNm VARCHAR2(500)
+                ,block VARCHAR2(50)
+                ,lot VARCHAR2(50)
+                ,철거멸실구분코드	VARCHAR(1)
+				,철거멸실구분코드명	VARCHAR(100)
+				,철거시작일	VARCHAR(8)
+				,철거종료일	VARCHAR(8)
+				,철거멸실일	VARCHAR(8)
+				,연면적      number(19,9)
+				,건축물수	number(5)
+				,주용도코드	VARCHAR(5)
+				,주용도코드명	VARCHAR(100)
+				,구조코드	VARCHAR(2)
+				,구조코드명	VARCHAR(100)
+				,세대수	number(5)
+				,가구수	number(5)
+				,호수	NUMERIC(5)
+				,천장재함유유무	VARCHAR(1)
+				,단열재함유유무	VARCHAR(1)
+				,지붕재함유유무	VARCHAR(1)
+				,보온재함유유무	VARCHAR(1)
+				,기타함유유무	VARCHAR(1)
+				,해당없음유무	VARCHAR(1)
+				,기타유무	VARCHAR(1)
+				,바닥재함유유무	VARCHAR(1)
+				,crtnDay VARCHAR2(8)
+            ) nologging
+    </ddl>
+
+
+    <insert id ="insertBrMartKcy07">
+            INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_KCY_07 (MGMPK,PLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,철거멸실구분코드,철거멸실구분코드명,철거시작일,철거종료일,철거멸실일,연면적,건축물수,주용도코드,주용도코드명,구조코드,구조코드명,세대수,가구수,호수,천장재함유유무,단열재함유유무,지붕재함유유무,보온재함유유무,기타함유유무,해당없음유무,기타유무,바닥재함유유무,CRTNDAY)
+            VALUES (:1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24, :25, :26, :27, :28, :29, :30, :31, :32, :33, :34  )
+    </insert>
+       <ddl id ="setTableBrMartKcy08">
+        CREATE TABLE S_IND.MART_KCY_08(
+            mgmPk VARCHAR2(33)
+                ,platPlc VARCHAR2(500)
+                ,bldNm VARCHAR2(500)
+                ,sigunguCd VARCHAR2(5)
+                ,bjdongCd VARCHAR2(5)
+                ,platGbCd CHAR(1)
+                ,bun VARCHAR2(4)
+                ,ji VARCHAR2(4)
+                ,splotNm VARCHAR2(500)
+                ,block VARCHAR2(50)
+                ,lot VARCHAR2(50)
+                ,전체건축면적 NUMBER(19,9)
+                ,전체연면적  NUMBER(19,9)
+                ,대지면적 NUMBER(19,9)
+                ,존치만료일 VARCHAR2(8)
+                ,구조코드 NUMBER(5)
+                ,구조코드명  VARCHAR2(100)
+                ,주용도코드 VARCHAR2(5)
+                ,주용도코드명 VARCHAR2(100)
+                ,건축면적 NUMBER(19,9)
+                ,연면적 NUMBER(19,9)
+                ,지상층수 NUMBER(5)
+                ,crtnDay VARCHAR2(8)
+            ) nologging
+    </ddl>
+
+    <insert id ="insertBrMartKcy08">
+            INSERT /*+ APPEND_VALUES */ INTO S_IND.MART_KCY_08 (MGMPK,PLATPLC,BLDNM,SIGUNGUCD,BJDONGCD,PLATGBCD,BUN,JI,SPLOTNM,BLOCK,LOT,전체건축면적,전체연면적,대지면적,존치만료일,구조코드,구조코드명,주용도코드,주용도코드명,건축면적,연면적,지상층수,CRTNDAY)
+            VALUES (:1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23  )
+    </insert>
+</root>
